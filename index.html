@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taylan Jumper</title>
+    <meta
+      name="description"
+      content="Taylan Jumper is a fast, playable browser runner inspired by the classic dinosaur jumping game."
+    />
+    <meta name="theme-color" content="#15130f" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell" aria-labelledby="game-title">
+      <section class="game-stage">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Arcade runner</p>
+            <h1 id="game-title">Taylan Jumper</h1>
+          </div>
+          <div class="scoreboard" aria-live="polite">
+            <span>Score <strong id="score">00000</strong></span>
+            <span>Best <strong id="best">00000</strong></span>
+          </div>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="game" width="960" height="420" aria-label="Taylan Jumper game area"></canvas>
+          <div class="overlay" id="overlay">
+            <p class="status" id="status">Ready</p>
+            <button class="play-button" id="playButton" type="button">Start Game</button>
+          </div>
+        </div>
+
+        <div class="controls" aria-label="Game controls">
+          <button class="control-button" id="jumpButton" type="button">Jump</button>
+          <button class="control-button quiet" id="resetButton" type="button">Reset</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Taylan Jumper",
+  "short_name": "Taylan Jump",
+  "description": "A fast browser runner game where Taylan jumps over obstacles.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#15130f",
+  "theme_color": "#15130f",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
